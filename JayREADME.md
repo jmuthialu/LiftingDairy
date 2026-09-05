@@ -32,6 +32,8 @@ Added sign-in/sign-up buttons and a user button to layout.tsx header
 clerk doctor passed all checks (dev instance configured; no production instance yet)
 Dev server running at http://localhost:3000 — home, /sign-in, /sign-up all return 200
 
+As a side effect it also installed 8 skills at ~/.agents/skills/clerk-*
+
 **Clerk User**
 jmuthialu@yahoo.com/WelcomeJayNext10
 
@@ -71,14 +73,15 @@ Neon Doc: https://neon.com/docs/ai/connect-mcp-clients-to-neon
 npx add-mcp https://mcp.neon.tech/mcp
 This adds .mcp.json file 
 
-Go to terminal and type claude to authenticate neon mcp. This works only from terminal.
+**Authenticate Neon MCP**
+Go to terminal and type claude. MCP authentication seems to work only from terminal.
 
 /mcp
 Select neon and authorize
 If sucessful /mcp will say neon is connected.
 
 [prompt1]
-list all table in neon from liftingdairyjay project
+list all tables in neon from liftingdairyjay project
 
 [prompt2]
 looks good, insert data into neon
