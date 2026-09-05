@@ -26,6 +26,14 @@ This is a Next.js 16 App Router project (React 19, TypeScript, Tailwind CSS v4),
 
 There is no other application code yet — routes, components, and data logic will live under `src/app/` following Next.js App Router conventions as they're added.
 
+## Coding standards
+
+The `docs/` folder contains this repo's mandatory coding standards. **Always read and follow every document in `docs/` before writing or modifying code** — they are not optional guidelines, and take precedence over general conventions or training-data defaults. Currently:
+
+- [docs/ui.md](docs/ui.md) — UI standards: shadcn/ui only (no hand-rolled components), date formatting via `date-fns` only.
+
+When new files are added to `docs/`, treat them as equally mandatory even if this list hasn't been updated yet — check the folder directly.
+
 
 <!-- BEGIN:nextjs-agent-rules -->
 
