@@ -1,7 +1,5 @@
 # Dashboard feature
 
-## Udemy Repo
-https://github.com/tomphill/liftingdiarycourse
 
 ## Create Dashboard feature UI only
 [prompt 1]
