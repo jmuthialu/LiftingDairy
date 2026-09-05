@@ -26,3 +26,6 @@ Create a document under docs/data-fetching.md that outlines the coding standards
 
 [prompt 2]
 Add additional rules to docs/data-fetching.md. DO NOT use raw SQL anytime. Very important that a logged in user should be able to see their data only. SHOULD NOT be able to see other's data. 
+
+[prompt 3]
+Implement data fetching code to fetch workouts for the currently logged-in user and for the selected date. Remove dummy data added earlier.
