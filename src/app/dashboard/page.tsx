@@ -16,6 +16,10 @@ export default async function DashboardPage({
     ? parse(date, DATE_KEY_FORMAT, new Date())
     : new Date();
 
+  console.log(
+    `[DashboardPage] userId=${userId} rawDateParam=${date} selectedDate=${selectedDate.toISOString()}`,
+  );
+
   const workouts = userId
     ? await getWorkoutsForUserByDate(userId, selectedDate)
     : [];
