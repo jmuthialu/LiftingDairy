@@ -1,6 +1,6 @@
 # Setup dependencies and installation
 
-## Udemy Repo
+## Udemy Course Repo
 https://github.com/tomphill/liftingdiarycourse
 
 ## Running the app
