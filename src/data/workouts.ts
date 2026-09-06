@@ -1,5 +1,15 @@
 import { addDays, startOfDay } from 'date-fns';
 import { db } from '@/db';
+import { workouts } from '@/db/schema';
+
+export async function createWorkout(input: {
+  userId: string;
+  name: string | null;
+  startedAt: Date;
+}) {
+  const [workout] = await db.insert(workouts).values(input).returning();
+  return workout;
+}
 
 export async function getWorkoutsForUserByDate(userId: string, date: Date) {
   const start = startOfDay(date);

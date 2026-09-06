@@ -1,5 +1,7 @@
 # Dashboard feature
 
+## Route
+http://localhost:3000/dashboard
 
 ## Create Dashboard feature UI only
 [prompt 1]

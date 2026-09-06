@@ -30,8 +30,11 @@ There is no other application code yet — routes, components, and data logic wi
 
 The `docs/` folder contains this repo's mandatory coding standards. **Always read and follow every document in `docs/` before writing or modifying code** — they are not optional guidelines, and take precedence over general conventions or training-data defaults. Currently:
 
+- [docs/routing.md](docs/routing.md) — Routing standards: all routes live under `/dashboard`, which is a protected route tree accessible only to logged-in users.
 - [docs/ui.md](docs/ui.md) — UI standards: shadcn/ui only (no hand-rolled components), date formatting via `date-fns` only.
 - [docs/data-fetching.md](docs/data-fetching.md) — Data fetching standards.
+- [docs/data-mutations.md](docs/data-mutations.md) — Mutate Data standards.
+- [docs/auth.md](docs/auth.md) — Authentication  standards.
 
 When new files are added to `docs/`, treat them as equally mandatory even if this list hasn't been updated yet — check the folder directly.
 

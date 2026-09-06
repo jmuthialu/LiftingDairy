@@ -1,7 +1,20 @@
 # Create workout
 
+## Route
+http://localhost:3000/dashboard/workout/new
+
+## Create auth and data-mutation.md documents
 [prompt 1]:
 create a new auth.md documentation file in the /docs directory. this file should highlight the coding standards for everything to do with auth in this app, specifically that this app uses clerk for authentication.
 
-[prompt 2]:
-create a data-mutations.md documentation file for the coding standards for everything to do with data mutations in this app. Specifically data mutations MUST be done via helper functions with the src/data directory which wrap db calls via drizzle orm. all data mutations MUST be done via server actions within colocated files named actions.ts. all server actions params must be typed and should NOT have the FormData data type. ALL server actions MUST validate the arguments passed to them via zod.
+
+## Create new workout feature
+
+[prompt 1 / edit mode]:
+create a new page at /dashboard/workout/new with a form to create a new workout.
+
+[prompt 2 / edit mode]:
+the redirect should be done client side, not within the server action
+
+[prompt 3 / edit mode]:
+add into the docs/data-mutations.md file a rule that says the redirect() function should not be used within server actions. redirects should instead be done client side after the call to a server action resolves.
